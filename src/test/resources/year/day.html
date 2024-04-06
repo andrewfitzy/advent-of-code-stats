@@ -1,0 +1,746 @@
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Leaderboard - Advent of Code 2016</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css?31">
+    <link rel="stylesheet alternate" type="text/css" href="/static/highcontrast.css?1" title="High Contrast">
+    <link rel="shortcut icon" href="/favicon.png">
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    <script>window.addEventListener('click', function(e,s,r){if(e.target.nodeName==='CODE'&&e.detail===3){s=window.getSelection();s.removeAllRanges();r=document.createRange();r.selectNodeContents(e.target);s.addRange(r);}});</script>
+    <style type="text/css" id="operaUserStyle"></style>
+    <style type="text/css">:root [href^="//x4pollyxxpush.com/"], :root zeus-ad, :root topadblock, :root span[id^="ezoic-pub-ad-placeholder-"], :root guj-ad, :root gpt-ad, :root div[id^="zergnet-widget"], :root div[id^="vuukle-ad-"], :root div[id^="sticky_ad_"], :root div[id^="rc-widget-"], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root div[id^="div-gpt-"], :root div[id^="dfp-ad-"], :root div[id^="adspot-"], :root div[id^="ads300_250-widget-"], :root div[id^="ads300_100-widget-"], :root div[id^="ads250_250-widget-"], :root div[id^="adrotate_widgets-"], :root div[id^="_vdo_ads_player_ai_"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root div[data-native_ad], :root div[data-mini-ad-unit], :root div[data-insertion], :root div[data-id-advertdfpconf], :root div[data-google-query-id], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-content="Advertisement"], :root div[data-alias="300x250 Ad 2"], :root div[data-alias="300x250 Ad 1"], :root div[data-adzone], :root div[data-adunit-path], :root div[data-ad-wrapper], :root div[data-ad-placeholder], :root div[class^="native-ad-"], :root div[data-dfp-id], :root div[class^="kiwi-ad-wrapper"], :root div[class^="Adstyled__AdWrapper-"], :root div[aria-label="Ads"], :root display-ads, :root display-ad-component, :root atf-ad-slot, :root aside[id^="adrotate_widgets-"], :root article.ad, :root ark-top-ad, :root app-advertisement, :root app-ad, :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root amp-connatix-player, :root amp-ad-custom, :root amp-ad, :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="https://yogacomplyfuel.com/"], :root a[href^="https://www.sugarinstant.com/?partner_id="], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.nudeidols.com/cams/"], :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href^="https://www.kingsoffetish.com/tour?partner_id="], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root div[class^="Display_displayAd"], :root a[href^="https://www.sheetmusicplus.com/?aff_id="], :root a[href^="https://www.bang.com/?aff="], :root a[href^="https://www.adxsrve.com/"], :root a[href^="https://wirewar.website/"], :root a[href^="https://visit-website.com/"], :root a[href^="https://twinrdsyn.com/"], :root div[data-type="_mgwidget"]:not(.eyeo), :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://tsartech.g2afse.com/"], :root a[href^="https://trk.sportsflix4k.club/"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://traffdaq.com/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.totalav.com/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://track.adform.net/"], :root a[href^="https://torguard.net/aff.php"] > img, :root a[href^="https://thefacux.com/"], :root div[data-adname], :root a[href^="https://thechleads.pro/"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://taghaugh.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="https://www.highperformancecpmgate.com/"], :root a[href^="https://t.grtyi.com/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://slkmis.com/"], :root a[href^="https://sTaRtGAMing.net/tienda/"], :root citrus-ad-wrapper, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="https://sTaRTgamInG.net/tienda/"], :root [data-adblockkey], :root a[href^="https://sTARtgamIng.net/tienda/"], :root bottomadblock, :root a[href^="https://s.zlinkd.com/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="https://s.zlinkc.com/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://s.optzsrv.com/"], :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="https://reinstandpointdumbest.com/"], :root a[href^="https://go.strpjmp.com/"], :root a[href^="https://refpa4903566.top/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root a[href^="https://pb-track.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root ps-connatix-module, :root div[id^="ad_position_"], :root a[href^="https://ovb.im/"], :root div[id^="ad-div-"], :root a[href^="https://newbinotracs.com/"], :root a[href^="http://eighteenderived.com/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root [href^="https://stvkr.com/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root a[href^="https://loboclick.com"], :root .nya-slot[style], :root a[href^="https://a.bestcontentweb.top/"], :root a[href^="https://lobimax.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://refpa.top/"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://safesurfingtoday.com/"][href*="?skip="], :root a[href^="https://t.acam.link/"], :root a[href^="https://ads.leovegas.com/redirect.aspx?"], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root [data-css-class="dfp-inarticle"], :root .card-captioned.crd > .crd--cnt > .s2nPlayer, :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://startgamIng.Net/tienda/"], :root a[href^="https://l.hyenadata.com/"], :root a[href^="https://yourperfectdating.life/"], :root a[href^="https://join.virtuallust3d.com/"], :root a[href^="https://kiksajex.com/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://itubego.com/video-downloader/?affid="], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root a[href^="https://incisivetrk.cvtr.io/click?"], :root a[href^="https://hot-growngames.life/"], :root [data-revive-zoneid], :root a[href^="https://googleads.g.doubleclick.net/pcs/click"], :root a[href^="https://t.ajump1.com/"], :root a[href^="https://clk.wrenchsound.store/"], :root a[href^="https://go.zybrdr.com"], :root [href^="http://join.michelle-austin.com/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root a[href^="https://thaudray.com/"], :root .OUTBRAIN[data-widget-id^="FMS_REELD_"], :root [data-role="tile-ads-module"], :root a[href^="https://adsrv4k.com/"], :root a[href^="https://go.xlviirdr.com"], :root a[href^="https://ismlks.com/"], :root a[href^="//a.bestcontentfare.top/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://azpresearch.club/"], :root a[href^="https://go.xlirdr.com"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://go.dmzjmp.com"], :root a[href^="https://go.admjmp.com/"], :root [href^="https://kingered-banctours.com/"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a-ad, :root a[href^="https://affiliate.rusvpn.com/click.php?"], :root a[href^="https://geniusdexchange.com/"], :root a[href^="https://frameworkdeserve.com/"], :root a[href^="https://flirtandsweets.life/"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://financeads.net/tc.php?"], :root div[data-native-ad], :root a[href^="https://engine.trackingdesks.com/"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://www.reimageplus.com/"], :root a[href^="https://ak.hauchiwu.com/"], :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://engine.blueistheneworanges.com/"], :root a[href^="https://dl-protect.net/"], :root [href="//jjgirls.com/sex/ChaturbateCams"], :root a[href^="https://datingoffers30.info/"], :root a[href^="https://ctosrd.com/"], :root div[id*="ScriptRoot"]:not(.eyeo), :root a[href^="https://clixtrac.com/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root ad-shield-ads, :root a[href^="https://sTartGAMinG.net/tienda/"], :root AD-TRIPLE-BOX, :root a[href^="https://click.hoolig.app/"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="http://www.gfrevenge.com/landing/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://go.xlvirdr.com"], :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], :root a[href^="https://chaturbate.com/in/?track="], :root a[href^="https://chaturbate.com/in/?tour="], :root a[href^="https://cams.imagetwist.com/in/?track="], :root a[href^="https://go.gldrdr.com/"], :root a[href^="https://buqkrzbrucz.com/"], :root a[href^="https://affcpatrk.com/"], :root a[href^="https://bongacams2.com/track?"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="https://bngpt.com/"], :root a[href^="https://bluedelivery.pro/"], :root a[href^="https://black77854.com/"], :root a[href^="https://bc.game/"], :root a[href^="https://ndt5.net/"], :root a[href^="https://batheunits.com/"], :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="//whulsaux.com/"], :root a[href^="https://m.do.co/c/"] > img, :root [class^="s2nPlayer"], :root a[href^="https://chaturbate.jjgirls.com/?track="], :root a[href^="https://ausoafab.net/"], :root a[href^="https://t.ajrkm1.com/"], :root [href="https://masstortfinancing.com"] img, :root a[href^="https://bongacams10.com/track?"], :root a[href^="https://albionsoftwares.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://convertmb.com/"], :root a[href^="https://spo-play.live/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://intenseaffiliates.com/redirect/"], :root a[href^="https://ads.ad4game.com/"], :root [id^="google_ads_iframe"], :root a[href^="https://syndication.optimizesrv.com/"], :root a[href^="https://affpa.top/"], :root a[href^="https://adnetwrk.com/"], :root a[href^="https://adjoincomprise.com/"], :root [href^="http://misslinkvocation.com/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root [href^="https://r.kraken.com/"], :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://go.nordvpn.net/aff"] > img, :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://misspkl.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root a[href^="https://ad.kubiccomps.icu/"], :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[href^="https://a2.adform.net/"], :root a[href^="https://iactrivago.ampxdirect.com/"], :root a[href^="https://a.medfoodhome.com/"], :root a[href^="https://adultfriendfinder.com/go/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="http://static.fleshlight.com/images/banners/"], :root a[href^="https://a.adtng.com/"], :root [data-m-ad-id], :root a[href^="https://sTartgAminG.net/tienda/"], :root a[href^="https://a-ads.com/"], :root a[href^="https://join.virtualtaboo.com/track/"], :root a[href^="https://StarTGAminG.net/tienda/"], :root a[href^="https://STaRTgamINg.net/tienda/"], :root a[href^="http://www.mrskin.com/tour"], :root a[href^="https://agacelebir.com/"], :root a[href^="https://spygasm.com/track?"], :root ins.adsbygoogle, :root a[href^="https://1startfiledownload1.com/"], :root a[href^="https://s.zlinkb.com/"], :root a[href^="http://d2.zedo.com/"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="http://trk.globwo.online/"], :root a[href^="https://1betandgonow.com/"], :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="http://traffic.tc-clicks.com/"], :root a[href^="http://tour.mrskin.com/"], :root [href^="https://wct.link/"], :root [data-desktop-ad-id], :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="http://m.hue2m.com/"], :root a[href^="https://funkydaters.com/"], :root [id^="ad_sky"], :root a[href^="http://https://www.get-express-vpn.com/offer/"], :root div[id^="google_dfp_"], :root a[href^="http://googleads.g.doubleclick.net/pcs/click"], :root [href^="http://go.cm-trk2.com/"], :root a[href^="http://click.payserve.com/"], :root a[href^="https://porngames.adult/?SID="], :root a[href^="https://landing1.brazzersnetwork.com"], :root #slashboxes > .deals-rail, :root [href^="http://globsads.com/"], :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="http://bc.vc/?r="], :root a[href^="https://mityneedn.com/"], :root [href^="http://homemoviestube.com/"], :root a[href^="http://ad.doubleclick.net/"], :root a[href^="//zunsoach.com/"], :root a[href^="//s.st1net.com/splash.php"], :root a[href^="//pubads.g.doubleclick.net/"], :root a[href^="https://femglobal.app/"], :root a[href^="//go.eabids.com/"], :root [id^="div-gpt-ad"], :root .ob_container .item-container-obpd, :root div[id^="yandex_ad"], :root a[href^="https://pb-imc.com/"], :root a[href^="http://deskfrontfreely.com/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root [href^="https://join.playboyplus.com/track/"], :root a[href^="//ardslediana.com/"], :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root #kt_player > a[target="_blank"], :root a[href*=".cfm?fp="][href*="&maxads="], :root [data-ad-width], :root [href^="https://cpa.10kfreesilver.com/"], :root a[href^="https://a.bestcontentfood.top/"], :root a[href^="http://wct.link/"], :root [href^="https://goldforyourfuture.com/clk.trk"] img, :root [onclick^="location.href='http://www.reimageplus.com"], :root [id^="section-ad-banner"], :root a[href^="https://t.aslnk.link/"], :root a[href^="https://click.candyoffers.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://go.julrdr.com/"], :root .trc_rbox_div .syndicatedItemUB, :root [href^="https://zone.gotrackier.com/"], :root a[href^="https://fourwhenstatistics.com/"], :root [href^="https://detachedbates.com/"], :root [href^="https://www.targetingpartner.com/"], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://go.affiliatexe.com/"], :root [href^="https://www.hostg.xyz/"] > img, :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="https://maymooth-stopic.com/"], :root [href^="https://www.herbanomic.com/"] > img, :root div[id^="ad-position-"], :root a[href^="http://affiliate.glbtracker.com/"], :root a[href^="https://leg.xyz/?track="], :root div[id^="crt-"][style], :root a[href^="http://adultgames.xxx/"], :root a[href^="https://bngprm.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root a[href^="https://trk.softonixs.xyz/"], :root [href^="https://www.mypatriotsupply.com/"] > img, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root [href^="https://secure.bmtmicro.com/servlets/"], :root [href="https://ourgoldguy.com/contact/"] img, :root a[href^="https://brightadnetwork.com/"], :root a[href^="http://www.onwebcam.com/random?t_link="], :root [href^="https://www.avantlink.com/click.php"] img, :root a[href^="https://losingoldfry.com/"], :root [data-wpas-zoneid], :root .scroll-fixable.rail-right > .deals-rail, :root [href^="https://routewebtk.com/"], :root a[href^="https://oackoubs.com/"], :root a[href^="https://ak.psaltauw.net/"], :root a[href^="https://go.cmtaffiliates.com/"], :root [data-name="adaptiveConstructorAd"], :root [href^="https://optimizedelite.com/"] > img, :root a[href^="https://awptjmp.com/"], :root a[href^="https://go.goasrv.com/"], :root [href^="http://mypillow.com/"] > img, :root a[href^="http://bongacams.com/track?"], :root a[href^="https://fleshlight.sjv.io/"], :root [data-ad-manager-id], :root a[href^="https://promo-bc.com/"], :root a[href^="https://clicks.pipaffiliates.com/"], :root [href^="https://noqreport.com/"] > img, :root [href^="https://mylead.global/stl/"] > img, :root [href^="https://mypatriotsupply.com/"] > img, :root [data-freestar-ad], :root a[href^="https://fc.lc/ref/"], :root .vid-present > .van_vid_carousel__padding, :root span[data-ez-ph-id], :root [href^="https://track.aftrk1.com/"], :root div[id^="adngin-"], :root [data-rc-widget], :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root a[href^="https://staRTgaming.net/tienda/"], :root a[href^="https://STaRtgAmInG.net/tienda/"], :root [href^="https://ilovemyfreedoms.com/landing-"], :root [href^="https://go.xlrdr.com"], :root [href^="https://go.4rabettraff.com/"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [href^="https://glersakr.com/"], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://wittered-mainging.com/"], :root [href^="https://engine.gettopple.com/"], :root [data-id^="div-gpt-ad"], :root a[href^="https://tracker.loropartners.com/"], :root [href^="https://awbbjmp.com/"], :root a[href^="https://k2s.cc/pr/"], :root [href^="https://affect3dnetwork.com/track/"], :root a[href^="https://camfapr.com/landing/click/"], :root [href="//sexcams.plus/"], :root a[href^="https://go.currency.com/"], :root div[id^="advads_ad_"], :root .resultsList > div > div > div > div[data-resultid$="-sponsored"], :root [href^="http://www.mypillow.com/"] > img, :root a[href^="https://adserver.adreactor.com/"], :root [href^="http://join.shemalesfromhell.com/"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root [href^="http://www.fleshlightgirls.com/"], :root [href^="http://join.trannies-fuck.com/"], :root .trc_rbox .syndicatedItem, :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://cpmspace.com/"], :root [href^="https://freecourseweb.com/"] > .sitefriend, :root a[href^="https://ads.planetwin365affiliate.com/redirect.aspx?"], :root [href^="http://join.rodneymoore.com/"], :root [href^="https://shrugartisticelder.com"], :root a[href^="https://staRTgamIng.net/tienda/"], :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root [name^="google_ads_iframe"], :root a[href^="http://bodelen.com/"], :root [href="https://www.masstortfinancing.com/"] > img, :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root a[href^="https://lnkxt.bannerator.com/"], :root [href="https://jdrucker.com/gold"] > img, :root [href^="https://v.investologic.co.uk/"], :root [href^="https://cipledecline.buzz/"], :root a[href^="https://go.xxxjmp.com"], :root #leader-companion > a[href], :root a[href^="https://jaxofuna.com/"], :root div[recirculation-ad-container], :root [href^="https://traffserve.com/"], :root [id^="ad_slider"], :root [data-adbridg-ad-class], :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"], :root [href^="http://join.shemale.xxx/"], :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [href^="https://join3.bannedsextapes.com"], :root div[data-spotim-slot], :root [href^="https://antiagingbed.com/discount/"] > img, :root a[href^="https://go.247traffic.com/"], :root [href^="https://join.girlsoutwest.com/"], :root [href^="http://trafficare.net/"], :root [data-type="ad-vertical"], :root a[href^="https://u.expresstech.io/"], :root [href^="https://mypillow.com/"] > img, :root [href^="https://ad.admitad.com/"], :root [data-testid="ad_testID"], :root [href^="https://goldcometals.com/clk.trk"], :root a[href^="https://bodelen.com/"], :root [data-ad-name], :root a[href*=".g2afse.com/"], :root a[href^="https://go.hpyjmp.com"], :root a[href^="https://tour.mrskin.com/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root [href^="https://mystore.com/"] > img, :root [data-mobile-ad-id], :root [data-ez-name], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root [data-dynamic-ads], :root a[href^="http://go.xtbaffiliates.com/"], :root a[href^="https://consali.com/"], :root .grid > .container > #aside-promotion, :root DFP-AD, :root [onclick*="content.ad/"], :root AMP-AD, :root a[href^="https://sTartGAMiNG.net/tienda/"], :root [data-ad-cls], :root [id^="ad-wrap-"], :root div[id^="taboola-stream-"], :root [href^="https://go.astutelinks.com/"], :root a[href^="http://tc.tradetracker.net/"] > img, :root a[href^="http://affiliates.thrixxx.com/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root [data-template-type="nativead"], :root [class^="amp-ad-"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root [class^="adDisplay-module"], :root AD-SLOT, :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root a[href^="https://www.liquidfire.mobi/"], :root [href^="https://click2cvs.com/"], :root .trc_related_container div[data-item-syndicated="true"], :root [href^="http://join.shemalepornstar.com/"], :root a[href^="https://go.xlviiirdr.com"], :root .trc_rbox_div .syndicatedItem, :root .plistaList > .itemLinkPET, :root [href^="https://gmxvmvptfm.com/"], :root div[data-adunit], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root a[href^="https://www.adskeeper.com"], :root [href^="https://totlnkcl.com/"], :root [data-ad-module], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root div[data-ad-targeting], :root a[href^="https://hotplaystime.life/"], :root a[href^="http://www.h4trck.com/"], :root [href^="https://trackfin.asia/"], :root .plistaList > .plista_widget_underArticle_item[data-type="pet"], :root a[href^="https://bs.serving-sys.com"], :root [href^="http://residenceseeingstanding.com/"], :root div[id^="pa_sticky_ad_box_middle_"], :root a[href^="http://www.onclickmega.com/jump/next.php?"], :root .trc_rbox_border_elm .syndicatedItem, :root a[href*="//lkstrck2.com/"], :root [class^="div-gpt-ad"], :root a[href^="https://ggbetpromo.com/"], :root a[href^="http://partners.etoro.com/"], :root [data-advadstrackid], :root a[href^="https://refpazkjixes.top/"], :root #mgb-container > #mgb, :root [href^="https://www.cloudways.com/en/?id"], :root [href^="https://safer-redirection.com"], :root a[href^="https://startgAming.net/tienda/"], :root a[href^="https://tweakostensibleinstaller.com/"], :root a[href^="https://go.xlivrdr.com"], :root a[href^="https://cam4com.go2cloud.org/"], :root a[href^="http://li.blogtrottr.com/click?"], :root [href^="//mage98rquewz.com/"], :root a[href^="https://webroutetrk.com/"], :root a[href^="https://mercurybest.com/"], :root [href^="https://www.restoro.com/"], :root div[id^="optidigital-adslot"], :root .resultsList > div > div > div > div.G-5c[role="tab"][tabindex="0"] > .yuAt-pres-rounded { display: none !important; }</style>
+</head><!--
+
+
+
+
+Oh, hello!  Funny seeing you here.
+
+I appreciate your enthusiasm, but you aren't going to find much down here.
+There certainly aren't clues to any of the puzzles.  The best surprises don't
+even appear in the source until you unlock them for real.
+
+Please be careful with automated requests; I'm not a massive company, and I can
+only take so much traffic.  Please be considerate so that everyone gets to play.
+
+If you're curious about how Advent of Code works, it's running on some custom
+Perl code. Other than a few integrations (auth, analytics, social media), I
+built the whole thing myself, including the design, animations, prose, and all
+of the puzzles.
+
+The puzzles are most of the work; preparing a new calendar and a new set of
+puzzles each year takes all of my free time for 4-5 months. A lot of effort
+went into building this thing - I hope you're enjoying playing it as much as I
+enjoyed making it for you!
+
+If you'd like to hang out, I'm @ericwastl@hachyderm.io on Mastodon and
+@ericwastl on Twitter.
+
+- Eric Wastl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+<body>
+<header>
+    <div>
+        <h1 class="title-global"><a href="/">Advent of Code</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/2016/about">[About]</a></li>
+                <li><a href="/2016/events">[Events]</a></li>
+                <li><a href="https://teespring.com/stores/advent-of-code" target="_blank">[Shop]</a></li>
+                <li><a href="/2016/settings">[Settings]</a></li>
+                <li><a href="/2016/auth/logout">[Log Out]</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            Andrew Fitzpatrick <span class="star-count">47*</span>
+        </div>
+    </div>
+    <div>
+        <h1 class="title-event">&nbsp;&nbsp;<span class="title-event-wrap">{:year </span><a href="/2016">2016</a><span class="title-event-wrap">}</span></h1>
+        <nav>
+            <ul>
+                <li><a href="/2016">[Calendar]</a></li>
+                <li><a href="/2016/support">[AoC++]</a></li>
+                <li><a href="/2016/sponsors">[Sponsors]</a></li>
+                <li><a href="/2016/leaderboard">[Leaderboard]</a></li>
+                <li><a href="/2016/stats">[Stats]</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div id="sidebar">
+    <div id="sponsor">
+        <div class="quiet">
+            Our <a href="/2016/sponsors">sponsors</a> help make Advent of Code possible:
+        </div>
+        <div class="sponsor">
+            <a href="https://info.esparklearning.com/join-our-team-full-stack-engineer" target="_blank" onclick="if(ga)ga('send','event','sponsor','sidebar',this.href);" rel="noopener">eSpark Learning</a> - Solve the greatest puzzle of our day - transform education
+        </div>
+    </div>
+</div><!--/sidebar-->
+<main>
+    <p>Per Day: <span class="leaderboard-daylinks"><a href="/2016/leaderboard/day/1" class="leaderboard-daylinks-selected">1</a> <a href="/2016/leaderboard/day/2">2</a> <a href="/2016/leaderboard/day/3">3</a> <a href="/2016/leaderboard/day/4">4</a> <a href="/2016/leaderboard/day/5">5</a> <a href="/2016/leaderboard/day/6">6</a> <a href="/2016/leaderboard/day/7">7</a> <a href="/2016/leaderboard/day/8">8</a> <a href="/2016/leaderboard/day/9">9</a> <a href="/2016/leaderboard/day/10">10</a> <a href="/2016/leaderboard/day/11">11</a> <a href="/2016/leaderboard/day/12">12</a> <a href="/2016/leaderboard/day/13">13</a> <a href="/2016/leaderboard/day/14">14</a> <a href="/2016/leaderboard/day/15">15</a> <a href="/2016/leaderboard/day/16">16</a> <a href="/2016/leaderboard/day/17">17</a> <a href="/2016/leaderboard/day/18">18</a> <a href="/2016/leaderboard/day/19">19</a> <a href="/2016/leaderboard/day/20">20</a> <a href="/2016/leaderboard/day/21">21</a> <a href="/2016/leaderboard/day/22">22</a> <a href="/2016/leaderboard/day/23">23</a> <a href="/2016/leaderboard/day/24">24</a> <a href="/2016/leaderboard/day/25">25</a></span></p>
+    <p>First hundred users to get <span class="leaderboard-daydesc-both">both stars</span> on Day 1:</p>
+    <div class="leaderboard-entry" data-user-id="75249">
+        <span class="leaderboard-position"> 1)</span><span class="leaderboard-time">Dec 01 00:07:01</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="24214">
+        <span class="leaderboard-position"> 2)</span><span class="leaderboard-time">Dec 01 00:07:07</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="109523">
+        <span class="leaderboard-position"> 3)</span><span class="leaderboard-time">Dec 01 00:08:27</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="50802">
+        <span class="leaderboard-position"> 4)</span><span class="leaderboard-time">Dec 01 00:08:32</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="2902">
+        <span class="leaderboard-position"> 5)</span><span class="leaderboard-time">Dec 01 00:09:18</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="25282">
+        <span class="leaderboard-position"> 6)</span><span class="leaderboard-time">Dec 01 00:11:12</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="107679">
+        <span class="leaderboard-position"> 7)</span><span class="leaderboard-time">Dec 01 00:11:39</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="39632">
+        <span class="leaderboard-position"> 8)</span><span class="leaderboard-time">Dec 01 00:12:25</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="107783">
+        <span class="leaderboard-position"> 9)</span><span class="leaderboard-time">Dec 01 00:12:59</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111628">
+        <span class="leaderboard-position"> 10)</span><span class="leaderboard-time">Dec 01 00:13:49</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="109113">
+        <span class="leaderboard-position"> 11)</span><span class="leaderboard-time">Dec 01 00:14:19</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="35040">
+        <span class="leaderboard-position"> 12)</span><span class="leaderboard-time">Dec 01 00:14:26</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="50177">
+        <span class="leaderboard-position"> 13)</span><span class="leaderboard-time">Dec 01 00:14:43</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="23505">
+        <span class="leaderboard-position"> 14)</span><span class="leaderboard-time">Dec 01 00:15:28</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="44567">
+        <span class="leaderboard-position"> 15)</span><span class="leaderboard-time">Dec 01 00:15:42</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="105363">
+        <span class="leaderboard-position"> 16)</span><span class="leaderboard-time">Dec 01 00:15:46</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="38336">
+        <span class="leaderboard-position"> 17)</span><span class="leaderboard-time">Dec 01 00:15:57</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="6140">
+        <span class="leaderboard-position"> 18)</span><span class="leaderboard-time">Dec 01 00:16:19</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="24164">
+        <span class="leaderboard-position"> 19)</span><span class="leaderboard-time">Dec 01 00:16:47</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="96155">
+        <span class="leaderboard-position"> 20)</span><span class="leaderboard-time">Dec 01 00:17:47</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="18344">
+        <span class="leaderboard-position"> 21)</span><span class="leaderboard-time">Dec 01 00:18:28</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="107310">
+        <span class="leaderboard-position"> 22)</span><span class="leaderboard-time">Dec 01 00:18:30</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="233">
+        <span class="leaderboard-position"> 23)</span><span class="leaderboard-time">Dec 01 00:18:39</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="24230">
+        <span class="leaderboard-position"> 24)</span><span class="leaderboard-time">Dec 01 00:18:45</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="1082">
+        <span class="leaderboard-position"> 25)</span><span class="leaderboard-time">Dec 01 00:18:51</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="355">
+        <span class="leaderboard-position"> 26)</span><span class="leaderboard-time">Dec 01 00:19:16</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="59367">
+        <span class="leaderboard-position"> 27)</span><span class="leaderboard-time">Dec 01 00:19:21</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="14">
+        <span class="leaderboard-position"> 28)</span><span class="leaderboard-time">Dec 01 00:20:12</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="1948">
+        <span class="leaderboard-position"> 29)</span><span class="leaderboard-time">Dec 01 00:20:14</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="39771">
+        <span class="leaderboard-position"> 30)</span><span class="leaderboard-time">Dec 01 00:20:17</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="69360">
+        <span class="leaderboard-position"> 31)</span><span class="leaderboard-time">Dec 01 00:20:31</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="3231">
+        <span class="leaderboard-position"> 32)</span><span class="leaderboard-time">Dec 01 00:20:31</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="109383">
+        <span class="leaderboard-position"> 33)</span><span class="leaderboard-time">Dec 01 00:20:44</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="29832">
+        <span class="leaderboard-position"> 34)</span><span class="leaderboard-time">Dec 01 00:21:15</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="110771">
+        <span class="leaderboard-position"> 35)</span><span class="leaderboard-time">Dec 01 00:21:34</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="32454">
+        <span class="leaderboard-position"> 36)</span><span class="leaderboard-time">Dec 01 00:21:43</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="66912">
+        <span class="leaderboard-position"> 37)</span><span class="leaderboard-time">Dec 01 00:21:50</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="31625">
+        <span class="leaderboard-position"> 38)</span><span class="leaderboard-time">Dec 01 00:21:56</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="110375">
+        <span class="leaderboard-position"> 39)</span><span class="leaderboard-time">Dec 01 00:22:09</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="1854">
+        <span class="leaderboard-position"> 40)</span><span class="leaderboard-time">Dec 01 00:22:19</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="211">
+        <span class="leaderboard-position"> 41)</span><span class="leaderboard-time">Dec 01 00:22:26</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="105906">
+        <span class="leaderboard-position"> 42)</span><span class="leaderboard-time">Dec 01 00:22:35</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="4961">
+        <span class="leaderboard-position"> 43)</span><span class="leaderboard-time">Dec 01 00:22:37</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="17405">
+        <span class="leaderboard-position"> 44)</span><span class="leaderboard-time">Dec 01 00:22:57</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="107379">
+        <span class="leaderboard-position"> 45)</span><span class="leaderboard-time">Dec 01 00:23:15</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="3864">
+        <span class="leaderboard-position"> 46)</span><span class="leaderboard-time">Dec 01 00:24:04</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="110686">
+        <span class="leaderboard-position"> 47)</span><span class="leaderboard-time">Dec 01 00:24:11</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111631">
+        <span class="leaderboard-position"> 48)</span><span class="leaderboard-time">Dec 01 00:24:29</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="6772">
+        <span class="leaderboard-position"> 49)</span><span class="leaderboard-time">Dec 01 00:25:16</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="3059">
+        <span class="leaderboard-position"> 50)</span><span class="leaderboard-time">Dec 01 00:25:35</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="33306">
+        <span class="leaderboard-position"> 51)</span><span class="leaderboard-time">Dec 01 00:25:41</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="380">
+        <span class="leaderboard-position"> 52)</span><span class="leaderboard-time">Dec 01 00:25:50</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="37905">
+        <span class="leaderboard-position"> 53)</span><span class="leaderboard-time">Dec 01 00:26:09</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="9296">
+        <span class="leaderboard-position"> 54)</span><span class="leaderboard-time">Dec 01 00:26:12</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111579">
+        <span class="leaderboard-position"> 55)</span><span class="leaderboard-time">Dec 01 00:26:24</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111472">
+        <span class="leaderboard-position"> 56)</span><span class="leaderboard-time">Dec 01 00:26:35</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111674">
+        <span class="leaderboard-position"> 57)</span><span class="leaderboard-time">Dec 01 00:27:46</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="4445">
+        <span class="leaderboard-position"> 58)</span><span class="leaderboard-time">Dec 01 00:27:47</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="6101">
+        <span class="leaderboard-position"> 59)</span><span class="leaderboard-time">Dec 01 00:28:17</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111554">
+        <span class="leaderboard-position"> 60)</span><span class="leaderboard-time">Dec 01 00:28:42</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="84327">
+        <span class="leaderboard-position"> 61)</span><span class="leaderboard-time">Dec 01 00:28:49</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="59501">
+        <span class="leaderboard-position"> 62)</span><span class="leaderboard-time">Dec 01 00:28:56</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="15758">
+        <span class="leaderboard-position"> 63)</span><span class="leaderboard-time">Dec 01 00:29:19</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="28778">
+        <span class="leaderboard-position"> 64)</span><span class="leaderboard-time">Dec 01 00:29:27</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="9588">
+        <span class="leaderboard-position"> 65)</span><span class="leaderboard-time">Dec 01 00:29:43</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="29193">
+        <span class="leaderboard-position"> 66)</span><span class="leaderboard-time">Dec 01 00:29:54</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111702">
+        <span class="leaderboard-position"> 67)</span><span class="leaderboard-time">Dec 01 00:29:58</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="6408">
+        <span class="leaderboard-position"> 68)</span><span class="leaderboard-time">Dec 01 00:30:25</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="91942">
+        <span class="leaderboard-position"> 69)</span><span class="leaderboard-time">Dec 01 00:30:51</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111509">
+        <span class="leaderboard-position"> 70)</span><span class="leaderboard-time">Dec 01 00:31:15</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="23155">
+        <span class="leaderboard-position"> 71)</span><span class="leaderboard-time">Dec 01 00:31:16</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111207">
+        <span class="leaderboard-position"> 72)</span><span class="leaderboard-time">Dec 01 00:31:28</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111363">
+        <span class="leaderboard-position"> 73)</span><span class="leaderboard-time">Dec 01 00:31:39</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="102214">
+        <span class="leaderboard-position"> 74)</span><span class="leaderboard-time">Dec 01 00:31:46</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111611">
+        <span class="leaderboard-position"> 75)</span><span class="leaderboard-time">Dec 01 00:32:24</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111564">
+        <span class="leaderboard-position"> 76)</span><span class="leaderboard-time">Dec 01 00:32:25</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="107680">
+        <span class="leaderboard-position"> 77)</span><span class="leaderboard-time">Dec 01 00:33:23</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111060">
+        <span class="leaderboard-position"> 78)</span><span class="leaderboard-time">Dec 01 00:33:33</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="10440">
+        <span class="leaderboard-position"> 79)</span><span class="leaderboard-time">Dec 01 00:33:44</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="10790">
+        <span class="leaderboard-position"> 80)</span><span class="leaderboard-time">Dec 01 00:33:52</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="86412">
+        <span class="leaderboard-position"> 81)</span><span class="leaderboard-time">Dec 01 00:33:55</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="57354">
+        <span class="leaderboard-position"> 82)</span><span class="leaderboard-time">Dec 01 00:34:52</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="15041">
+        <span class="leaderboard-position"> 83)</span><span class="leaderboard-time">Dec 01 00:35:00</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="108919">
+        <span class="leaderboard-position"> 84)</span><span class="leaderboard-time">Dec 01 00:35:05</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="107482">
+        <span class="leaderboard-position"> 85)</span><span class="leaderboard-time">Dec 01 00:35:06</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="109734">
+        <span class="leaderboard-position"> 86)</span><span class="leaderboard-time">Dec 01 00:35:17</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="10192">
+        <span class="leaderboard-position"> 87)</span><span class="leaderboard-time">Dec 01 00:35:31</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="60758">
+        <span class="leaderboard-position"> 88)</span><span class="leaderboard-time">Dec 01 00:35:32</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="107707">
+        <span class="leaderboard-position"> 89)</span><span class="leaderboard-time">Dec 01 00:35:36</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="9664">
+        <span class="leaderboard-position"> 90)</span><span class="leaderboard-time">Dec 01 00:35:46</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="18766">
+        <span class="leaderboard-position"> 91)</span><span class="leaderboard-time">Dec 01 00:35:57</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="7440">
+        <span class="leaderboard-position"> 92)</span><span class="leaderboard-time">Dec 01 00:36:02</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111368">
+        <span class="leaderboard-position"> 93)</span><span class="leaderboard-time">Dec 01 00:36:31</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="3271">
+        <span class="leaderboard-position"> 94)</span><span class="leaderboard-time">Dec 01 00:36:40</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="20689">
+        <span class="leaderboard-position"> 95)</span><span class="leaderboard-time">Dec 01 00:36:51</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="54016">
+        <span class="leaderboard-position"> 96)</span><span class="leaderboard-time">Dec 01 00:37:25</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="36826">
+        <span class="leaderboard-position"> 97)</span><span class="leaderboard-time">Dec 01 00:37:53</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="4687">
+        <span class="leaderboard-position"> 98)</span><span class="leaderboard-time">Dec 01 00:38:34</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="34286">
+        <span class="leaderboard-position"> 99)</span><span class="leaderboard-time">Dec 01 00:38:48</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="32288">
+        <span class="leaderboard-position">100)</span><span class="leaderboard-time">Dec 01 00:38:49</span>
+    </div>
+    <p>First hundred users to get the <span class="leaderboard-daydesc-first">first star</span> on Day 1:</p>
+    <div class="leaderboard-entry" data-user-id="75249">
+        <span class="leaderboard-position"> 1)</span><span class="leaderboard-time">Dec 01 00:03:57</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="24214">
+        <span class="leaderboard-position"> 2)</span><span class="leaderboard-time">Dec 01 00:04:31</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="107679">
+        <span class="leaderboard-position"> 3)</span><span class="leaderboard-time">Dec 01 00:04:37</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="2902">
+        <span class="leaderboard-position"> 4)</span><span class="leaderboard-time">Dec 01 00:04:41</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="15758">
+        <span class="leaderboard-position"> 5)</span><span class="leaderboard-time">Dec 01 00:05:13</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="50802">
+        <span class="leaderboard-position"> 6)</span><span class="leaderboard-time">Dec 01 00:05:35</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="109113">
+        <span class="leaderboard-position"> 7)</span><span class="leaderboard-time">Dec 01 00:05:45</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="109523">
+        <span class="leaderboard-position"> 8)</span><span class="leaderboard-time">Dec 01 00:06:20</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="109383">
+        <span class="leaderboard-position"> 9)</span><span class="leaderboard-time">Dec 01 00:06:40</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="66912">
+        <span class="leaderboard-position"> 10)</span><span class="leaderboard-time">Dec 01 00:06:43</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="23505">
+        <span class="leaderboard-position"> 11)</span><span class="leaderboard-time">Dec 01 00:06:43</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111628">
+        <span class="leaderboard-position"> 12)</span><span class="leaderboard-time">Dec 01 00:07:00</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="50177">
+        <span class="leaderboard-position"> 13)</span><span class="leaderboard-time">Dec 01 00:07:12</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="233">
+        <span class="leaderboard-position"> 14)</span><span class="leaderboard-time">Dec 01 00:07:15</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="104166">
+        <span class="leaderboard-position"> 15)</span><span class="leaderboard-time">Dec 01 00:07:29</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="25282">
+        <span class="leaderboard-position"> 16)</span><span class="leaderboard-time">Dec 01 00:07:47</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="39771">
+        <span class="leaderboard-position"> 17)</span><span class="leaderboard-time">Dec 01 00:07:51</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="1854">
+        <span class="leaderboard-position"> 18)</span><span class="leaderboard-time">Dec 01 00:08:20</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111674">
+        <span class="leaderboard-position"> 19)</span><span class="leaderboard-time">Dec 01 00:08:28</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="69360">
+        <span class="leaderboard-position"> 20)</span><span class="leaderboard-time">Dec 01 00:08:42</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="39632">
+        <span class="leaderboard-position"> 21)</span><span class="leaderboard-time">Dec 01 00:08:56</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="38336">
+        <span class="leaderboard-position"> 22)</span><span class="leaderboard-time">Dec 01 00:09:04</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="107783">
+        <span class="leaderboard-position"> 23)</span><span class="leaderboard-time">Dec 01 00:09:08</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="110771">
+        <span class="leaderboard-position"> 24)</span><span class="leaderboard-time">Dec 01 00:09:16</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="14">
+        <span class="leaderboard-position"> 25)</span><span class="leaderboard-time">Dec 01 00:09:26</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="3059">
+        <span class="leaderboard-position"> 26)</span><span class="leaderboard-time">Dec 01 00:09:38</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="29832">
+        <span class="leaderboard-position"> 27)</span><span class="leaderboard-time">Dec 01 00:09:41</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="3231">
+        <span class="leaderboard-position"> 28)</span><span class="leaderboard-time">Dec 01 00:09:48</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="35040">
+        <span class="leaderboard-position"> 29)</span><span class="leaderboard-time">Dec 01 00:09:52</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111600">
+        <span class="leaderboard-position"> 30)</span><span class="leaderboard-time">Dec 01 00:09:54</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111631">
+        <span class="leaderboard-position"> 31)</span><span class="leaderboard-time">Dec 01 00:10:08</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111563">
+        <span class="leaderboard-position"> 32)</span><span class="leaderboard-time">Dec 01 00:10:08</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="211">
+        <span class="leaderboard-position"> 33)</span><span class="leaderboard-time">Dec 01 00:10:09</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="59367">
+        <span class="leaderboard-position"> 34)</span><span class="leaderboard-time">Dec 01 00:10:14</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="63465">
+        <span class="leaderboard-position"> 35)</span><span class="leaderboard-time">Dec 01 00:10:19</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="24164">
+        <span class="leaderboard-position"> 36)</span><span class="leaderboard-time">Dec 01 00:10:24</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="110418">
+        <span class="leaderboard-position"> 37)</span><span class="leaderboard-time">Dec 01 00:10:40</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111368">
+        <span class="leaderboard-position"> 38)</span><span class="leaderboard-time">Dec 01 00:10:55</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="7440">
+        <span class="leaderboard-position"> 39)</span><span class="leaderboard-time">Dec 01 00:10:55</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="6140">
+        <span class="leaderboard-position"> 40)</span><span class="leaderboard-time">Dec 01 00:11:01</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="9296">
+        <span class="leaderboard-position"> 41)</span><span class="leaderboard-time">Dec 01 00:11:05</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="4687">
+        <span class="leaderboard-position"> 42)</span><span class="leaderboard-time">Dec 01 00:11:08</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="1948">
+        <span class="leaderboard-position"> 43)</span><span class="leaderboard-time">Dec 01 00:11:11</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="28778">
+        <span class="leaderboard-position"> 44)</span><span class="leaderboard-time">Dec 01 00:11:18</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="44219">
+        <span class="leaderboard-position"> 45)</span><span class="leaderboard-time">Dec 01 00:11:29</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="86412">
+        <span class="leaderboard-position"> 46)</span><span class="leaderboard-time">Dec 01 00:11:35</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="54016">
+        <span class="leaderboard-position"> 47)</span><span class="leaderboard-time">Dec 01 00:11:53</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="44567">
+        <span class="leaderboard-position"> 48)</span><span class="leaderboard-time">Dec 01 00:12:06</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="380">
+        <span class="leaderboard-position"> 49)</span><span class="leaderboard-time">Dec 01 00:12:10</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="107310">
+        <span class="leaderboard-position"> 50)</span><span class="leaderboard-time">Dec 01 00:12:22</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="105363">
+        <span class="leaderboard-position"> 51)</span><span class="leaderboard-time">Dec 01 00:12:24</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="1082">
+        <span class="leaderboard-position"> 52)</span><span class="leaderboard-time">Dec 01 00:12:24</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="18344">
+        <span class="leaderboard-position"> 53)</span><span class="leaderboard-time">Dec 01 00:12:29</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="59501">
+        <span class="leaderboard-position"> 54)</span><span class="leaderboard-time">Dec 01 00:12:34</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111689">
+        <span class="leaderboard-position"> 55)</span><span class="leaderboard-time">Dec 01 00:12:40</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="107707">
+        <span class="leaderboard-position"> 56)</span><span class="leaderboard-time">Dec 01 00:12:44</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="105906">
+        <span class="leaderboard-position"> 57)</span><span class="leaderboard-time">Dec 01 00:12:45</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111611">
+        <span class="leaderboard-position"> 58)</span><span class="leaderboard-time">Dec 01 00:12:46</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111496">
+        <span class="leaderboard-position"> 59)</span><span class="leaderboard-time">Dec 01 00:12:49</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="96155">
+        <span class="leaderboard-position"> 60)</span><span class="leaderboard-time">Dec 01 00:13:05</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="24230">
+        <span class="leaderboard-position"> 61)</span><span class="leaderboard-time">Dec 01 00:13:09</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111509">
+        <span class="leaderboard-position"> 62)</span><span class="leaderboard-time">Dec 01 00:13:11</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="31625">
+        <span class="leaderboard-position"> 63)</span><span class="leaderboard-time">Dec 01 00:13:12</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="355">
+        <span class="leaderboard-position"> 64)</span><span class="leaderboard-time">Dec 01 00:13:12</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="37905">
+        <span class="leaderboard-position"> 65)</span><span class="leaderboard-time">Dec 01 00:13:13</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="32288">
+        <span class="leaderboard-position"> 66)</span><span class="leaderboard-time">Dec 01 00:13:14</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="84327">
+        <span class="leaderboard-position"> 67)</span><span class="leaderboard-time">Dec 01 00:13:40</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="9588">
+        <span class="leaderboard-position"> 68)</span><span class="leaderboard-time">Dec 01 00:14:04</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111275">
+        <span class="leaderboard-position"> 69)</span><span class="leaderboard-time">Dec 01 00:14:28</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="4961">
+        <span class="leaderboard-position"> 70)</span><span class="leaderboard-time">Dec 01 00:14:32</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="5958">
+        <span class="leaderboard-position"> 71)</span><span class="leaderboard-time">Dec 01 00:14:39</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="69329">
+        <span class="leaderboard-position"> 72)</span><span class="leaderboard-time">Dec 01 00:14:47</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="108919">
+        <span class="leaderboard-position"> 73)</span><span class="leaderboard-time">Dec 01 00:15:08</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="107379">
+        <span class="leaderboard-position"> 74)</span><span class="leaderboard-time">Dec 01 00:15:15</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="32454">
+        <span class="leaderboard-position"> 75)</span><span class="leaderboard-time">Dec 01 00:15:19</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111579">
+        <span class="leaderboard-position"> 76)</span><span class="leaderboard-time">Dec 01 00:15:42</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="17405">
+        <span class="leaderboard-position"> 77)</span><span class="leaderboard-time">Dec 01 00:15:53</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="10790">
+        <span class="leaderboard-position"> 78)</span><span class="leaderboard-time">Dec 01 00:16:10</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111207">
+        <span class="leaderboard-position"> 79)</span><span class="leaderboard-time">Dec 01 00:16:22</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111472">
+        <span class="leaderboard-position"> 80)</span><span class="leaderboard-time">Dec 01 00:16:27</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="33306">
+        <span class="leaderboard-position"> 81)</span><span class="leaderboard-time">Dec 01 00:16:31</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="14243">
+        <span class="leaderboard-position"> 82)</span><span class="leaderboard-time">Dec 01 00:16:36</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="110375">
+        <span class="leaderboard-position"> 83)</span><span class="leaderboard-time">Dec 01 00:16:42</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="103954">
+        <span class="leaderboard-position"> 84)</span><span class="leaderboard-time">Dec 01 00:17:05</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="34286">
+        <span class="leaderboard-position"> 85)</span><span class="leaderboard-time">Dec 01 00:17:07</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="102214">
+        <span class="leaderboard-position"> 86)</span><span class="leaderboard-time">Dec 01 00:17:12</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111060">
+        <span class="leaderboard-position"> 87)</span><span class="leaderboard-time">Dec 01 00:17:14</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="38081">
+        <span class="leaderboard-position"> 88)</span><span class="leaderboard-time">Dec 01 00:17:18</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="10192">
+        <span class="leaderboard-position"> 89)</span><span class="leaderboard-time">Dec 01 00:17:20</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="18766">
+        <span class="leaderboard-position"> 90)</span><span class="leaderboard-time">Dec 01 00:17:35</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="111363">
+        <span class="leaderboard-position"> 91)</span><span class="leaderboard-time">Dec 01 00:18:01</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="3864">
+        <span class="leaderboard-position"> 92)</span><span class="leaderboard-time">Dec 01 00:18:20</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="10440">
+        <span class="leaderboard-position"> 93)</span><span class="leaderboard-time">Dec 01 00:18:27</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="46329">
+        <span class="leaderboard-position"> 94)</span><span class="leaderboard-time">Dec 01 00:18:31</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="110686">
+        <span class="leaderboard-position"> 95)</span><span class="leaderboard-time">Dec 01 00:18:53</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="6772">
+        <span class="leaderboard-position"> 96)</span><span class="leaderboard-time">Dec 01 00:18:56</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="8098">
+        <span class="leaderboard-position"> 97)</span><span class="leaderboard-time">Dec 01 00:19:05</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="57354">
+        <span class="leaderboard-position"> 98)</span><span class="leaderboard-time">Dec 01 00:19:15</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="106627">
+        <span class="leaderboard-position"> 99)</span><span class="leaderboard-time">Dec 01 00:19:30</span>
+    </div>
+    <div class="leaderboard-entry" data-user-id="91942">
+        <span class="leaderboard-position">100)</span><span class="leaderboard-time">Dec 01 00:19:39</span>
+    </div>
+</main><!-- ga -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-69522494-1', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');
+</script><!-- /ga -->
+</body>
+</html>
